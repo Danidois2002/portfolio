@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danial Bitar | Portfolio</title>
+  <meta name="description" content="Portfolio de Danial Bitar, développeur web junior front-end et back-end basé à Vielsalm, Belgique." />
+  <link rel="preload" href="assets/images/maPhoto.jpg" as="image" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="loading-screen" id="loading-screen">
+    <div class="loader-ring"></div>
+    <p>Chargement du portfolio…</p>
+  </div>
+
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top">Danial Bitar</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="accueil">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="hero-copy reveal reveal-up">
+          <span class="eyebrow">Front-end &amp; Back-end</span>
+          <h1>Développeur web junior</h1>
+          <p class="lead">Bonjour, je m'appelle <strong>Danial Bitar</strong>. Développeur web junior, je suis actuellement en formation <strong>Back-End</strong> à l'IFAPME de Liège. Passionné par la création d'applications web modernes, je développe mes compétences à travers des projets personnels et des expériences professionnelles. Autonome, créatif et motivé, je souhaite mettre mes connaissances au service de projets innovants.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-secondary" href="#contact">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-zoom reveal-delay-1">
+          <div class="portrait-card">
+            <img src="assets/images/maPhoto.jpg" alt="Photo de Danial Bitar" class="portrait" />
+          </div>
+        </div>
+        <div class="hero-glow"></div>
+      </section>
+
+      <section class="about section" id="apropos">
+        <div class="section-heading reveal reveal-up">
+          <span class="eyebrow">À propos</span>
+          <h2>Mon profil</h2>
+        </div>
+        <div class="about-grid">
+          <article class="panel reveal reveal-left" data-parallax="0.04">
+            <h3>Langues</h3>
+            <p>Je suis <strong>polyglotte</strong>, ce qui me permet de communiquer et de travailler dans des environnements multiculturels.</p>
+            <ul class="lang-list">
+              <li><span>Arabe</span><em>Langue maternelle</em></li>
+              <li><span>Arménien</span><em>Langue maternelle</em></li>
+              <li><span>Français</span><em>Courant</em></li>
+              <li><span>Anglais</span><em>Avancé</em></li>
+            </ul>
+          </article>
+          <article class="panel reveal reveal-right reveal-delay-1" data-parallax="0.03">
+            <h3>Mes hobbies</h3>
+            <div class="tags">
+              <span>Jeux vidéo</span>
+              <span>Football</span>
+              <span>Musique</span>
+              <span>Nouveaux langages</span>
+              <span>Frameworks</span>
+            </div>
+          </article>
+          <article class="panel panel-wide reveal reveal-up reveal-delay-2" data-parallax="0.025">
+            <h3>Expériences professionnelles</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>Juillet 2025 – Sept. 2026</span>
+                <div>
+                  <h4>Employé polyvalent — Restauration</h4>
+                  <p class="timeline-place">BelgoFrit, Baraque de Fraiture</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>Mai – Juin 2025</span>
+                <div>
+                  <h4>Développeur Web Front-End — Stage</h4>
+                  <p class="timeline-place">Logistics in Wallonia</p>
+                  <ul>
+                    <li>Développement d'un quiz interactif d'évaluation environnementale des entreprises.</li>
+                    <li>Conception de maquettes UI/UX et participation à la refonte d'une partie du site web.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>Février – Mars 2025</span>
+                <div>
+                  <h4>Ouvrier polyvalent</h4>
+                  <p class="timeline-place">Vayamundo, Houffalize</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>Sept. 2024 – Février 2025</span>
+                <div>
+                  <h4>Ouvrier intérimaire</h4>
+                  <p class="timeline-place">KP-CO</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="panel panel-wide reveal reveal-up" data-parallax="0.02">
+            <h3>Formations &amp; diplômes</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>2026 – 2027</span>
+                <div>
+                  <h4>Développement Back-End <em class="badge">En cours</em></h4>
+                  <p class="timeline-place">IFAPME — Liège</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2025 – 2026</span>
+                <div>
+                  <h4>Développement Front-End</h4>
+                  <p class="timeline-place">IFAPME — Liège</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2025</span>
+                <div>
+                  <h4>Diplôme de gestion de base</h4>
+                  <p class="timeline-place">Diplôme obtenu</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2024 – 2025</span>
+                <div>
+                  <h4>Développement Web</h4>
+                  <p class="timeline-place">IFAPME — Liège</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2023 – 2024</span>
+                <div>
+                  <h4>Informatique de gestion et développement d'applications mobiles</h4>
+                  <p class="timeline-place">HELMo — Première année</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2022 – 2023</span>
+                <div>
+                  <h4>Initiation à la programmation</h4>
+                  <p class="timeline-place">Technifutur</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span>2021</span>
+                <div>
+                  <h4>Certificat d'Enseignement Secondaire Supérieur (CESS)</h4>
+                  <p class="timeline-place">Athénée royal de Bastogne-Houffalize</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="panel panel-wide reveal reveal-up" data-parallax="0.02">
+            <h3>Mes ambitions</h3>
+            <p>Actuellement en formation Back-End, je souhaite me spécialiser en <strong>back-end</strong> et approfondir mes compétences en développement d'architectures robustes, gestion de bases de données et optimisation des performances serveurs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section" id="competences">
+        <div class="section-heading reveal reveal-up">
+          <span class="eyebrow">Compétences</span>
+          <h2>Outils et technologies</h2>
+        </div>
+        <div class="skills-grid reveal reveal-up reveal-delay-1">
+          <div class="skill-item" data-tilt><img src="assets/logos/html5.svg" alt="HTML5"><span>HTML5</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/css.svg" alt="CSS3"><span>CSS3</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/php.svg" alt="PHP"><span>PHP</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/javascript.svg" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/java.svg" alt="Java"><span>Java</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/picsart.svg" alt="Picsart"><span>Picsart</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/canva.svg" alt="Canva"><span>Canva</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/figma.svg" alt="Figma"><span>Figma</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/discorde.svg" alt="Discord"><span>Discord</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/git.svg" alt="Git"><span>Git</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/mysql.svg" alt="MySQL"><span>MySQL</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/studio.svg" alt="VS Studio"><span>VS Studio</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/code.png" alt="VS Code"><span>VS Code</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/sublimetext.svg" alt="SublimeText"><span>SublimeText</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/filezilla.svg" alt="FileZilla"><span>FileZilla</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/word.svg" alt="Word"><span>Word</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/excel.svg" alt="Excel"><span>Excel</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/powerpoint.svg" alt="PowerPoint"><span>PowerPoint</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/chatgpt.png" alt="ChatGPT"><span>ChatGPT</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/claude.png" alt="ClaudeAI"><span>ClaudeAI</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/angular.png" alt="Angular"><span>Angular</span></div>
+          <div class="skill-item" data-tilt><img src="assets/logos/node.png" alt="Node"><span>Node</span></div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projets">
+        <div class="section-heading reveal reveal-up">
+          <span class="eyebrow">Projets</span>
+          <h2>Mes réalisations</h2>
+        </div>
+        <div class="projects-intro reveal reveal-zoom">
+          <div class="projects-media">
+            <img src="assets/ref/Coding.gif" alt="Animation de code" loading="lazy" decoding="async" />
+          </div>
+          <p>Voici certains de mes projets : </p>
+        </div>
+        <div class="projects-grid" data-parallax-group>
+          <article class="project-card project-featured reveal reveal-up" data-parallax="0.04">
+            <div class="project-number">01 · Projet personnel <em class="badge">En cours</em></div>
+            <h3>GymSocial — Application mobile fitness</h3>
+            <p>Mon plus gros projet : une application mobile <strong>Android &amp; iOS</strong> qui combine <strong>suivi sportif</strong>, <strong>planification d'entraînements</strong>, <strong>nutrition</strong> et <strong>réseau social</strong>. Je l'ai conçue et développée de A à Z : l'application, le serveur back-end, la base de données et le site web. Démarrée en mars 2026, elle est en phase de test et son lancement officiel est prévu pour décembre 2026.</p>
+            <div class="project-stats">
+              <div><strong>1 900+</strong><span>exercices dans la bibliothèque</span></div>
+              <div><strong>30+</strong><span>écrans</span></div>
+              <div><strong>590+</strong><span>commits</span></div>
+              <div><strong>130+</strong><span>fichiers de tests automatisés</span></div>
+            </div>
+            <ul class="project-features">
+              <li>Suivi de séance en temps réel avec missions, minuteur et récompenses</li>
+              <li>Bibliothèque d'exercices avec vidéos, catégories et favoris</li>
+              <li>Nutrition : bibliothèque d'aliments, plans de repas et historique</li>
+              <li>Carnet de progression avec courbes hebdomadaires</li>
+              <li>Coach IA personnalisé, protégé contre les détournements de prompt</li>
+              <li>Fil d'actualité, amis, messagerie privée et profils publics</li>
+              <li>Gamification : XP, niveaux, badges et séries d'entraînement</li>
+              <li>Calendrier d'entraînements et notifications push</li>
+              <li>Sécurité : double authentification (2FA) et connexion Google &amp; Apple</li>
+              <li>Modération de contenu, blocage d'utilisateurs et signalements</li>
+              <li>RGPD : export des données, suppression de compte, appareils connectés</li>
+              <li>Synchronisation entre téléphones et mises à jour à distance (OTA)</li>
+            </ul>
+            <div class="tags">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Supabase</span>
+              <span>PostgreSQL</span>
+              <span>Railway</span>
+              <span>Sentry</span>
+              <span>Jest</span>
+              <span>GitHub Actions</span>
+            </div>
+            <a class="project-link" href="https://www.gymsocial.eu" target="_blank" rel="noreferrer">Visiter gymsocial.eu</a>
+          </article>
+          <article class="project-card reveal reveal-up tilt-card" data-parallax="0.04">
+            <div class="project-number">02</div>
+            <h3>¡Hala Madrid!</h3>
+            <p>Site de supporters du Real Madrid avec boutique en ligne, en une seule page et sans framework.</p>
+            <ul class="project-features">
+              <li>3 équipes : onze type sur un terrain, effectif filtrable</li>
+              <li>Maillots dessinés en SVG et flocage personnalisé en direct</li>
+              <li>Panier et commande simulée</li>
+              <li>Actualités filtrables par catégorie</li>
+              <li>Espace admin : actualités et effectifs modifiables</li>
+            </ul>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>SVG</span>
+              <span>GitHub Pages</span>
+            </div>
+            <a class="project-link" href="https://danidois2002.github.io/HalaMadrid/" target="_blank" rel="noreferrer">Ouvrir le projet</a>
+          </article>
+          <article class="project-card reveal reveal-up tilt-card reveal-delay-1" data-parallax="0.04">
+            <div class="project-number">03</div>
+            <h3>Daniel's Pizzeria</h3>
+            <p>Site vitrine d'une pizzeria artisanale à Liège, en une seule page et sans framework.</p>
+            <ul class="project-features">
+              <li>Carte interactive par catégories, avec aperçu des plats</li>
+              <li>Réservation : convives, date, créneaux et résumé en direct</li>
+              <li>Statut « ouvert / fermé » calculé en temps réel</li>
+              <li>Vidéo de présentation et plan d'accès</li>
+              <li>Images optimisées en WebP, navigation au clavier</li>
+            </ul>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+            <a class="project-link" href="https://danidois2002.github.io/Pizzeria/" target="_blank" rel="noreferrer">Ouvrir le projet</a>
+          </article>
+          <article class="project-card reveal reveal-up tilt-card reveal-delay-2" data-parallax="0.04">
+            <div class="project-number">04</div>
+            <h3>Diagnostic Supply Chain</h3>
+            <p>Quiz interactif réalisé pendant mon stage chez Logistics in Wallonia, pour évaluer la maturité de la Supply Chain d'une entreprise.</p>
+            <ul class="project-features">
+              <li>27 questions réparties en 7 thématiques</li>
+              <li>Lexique intégré : définitions d'un clic</li>
+              <li>Résultat immédiat : niveau, graphiques et risques</li>
+              <li>Rapport PDF et progression sauvegardée</li>
+              <li>Exemple de résultat consultable sans répondre</li>
+            </ul>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+            <a class="project-link" href="https://danidois2002.github.io/LIW/" target="_blank" rel="noreferrer">Ouvrir le projet</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="section-heading reveal reveal-up">
+          <span class="eyebrow">Contact</span>
+          <h2>Me contacter</h2>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form reveal reveal-left" id="contact-form">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" rows="6" required></textarea>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+          <div class="social-panel reveal reveal-right reveal-delay-1">
+            <p class="contact-info">📍 Vielsalm, Belgique</p>
+            <a href="mailto:dbitar77@gmail.com">dbitar77@gmail.com</a>
+            <a href="https://www.instagram.com/dbitar_/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/daniel-bitar-992ab3258" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/Danidois2002" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Danial Bitar</p>
+    </footer>
+  </div>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
