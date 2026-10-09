@@ -163,6 +163,24 @@ img { max-width: 100%; display: block; }
   padding: .72rem 1rem; border-radius: 999px; background: rgba(255,255,255,.05);
   border: 1px solid rgba(255,255,255,.1); color: var(--text);
 }
+/* Encadré « musculation » dans les hobbies */
+.highlight {
+  margin-top: 1.4rem; padding: 1.1rem 1.2rem; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(124,199,255,.1), rgba(139,92,246,.1));
+  border: 1px solid rgba(124,199,255,.25);
+}
+.highlight-head { display: flex; gap: .9rem; align-items: flex-start; }
+.highlight-icon {
+  display: grid; place-items: center; flex: none; width: 2.6rem; height: 2.6rem; border-radius: 12px;
+  background: rgba(124,199,255,.14); font-size: 1.3rem;
+}
+.highlight strong { display: block; margin-bottom: .2rem; }
+.highlight p { margin: 0; color: var(--muted); line-height: 1.6; font-size: .95rem; }
+.goal { margin-top: 1rem; }
+.goal-label { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: .9rem; color: var(--muted); }
+.goal-label b { color: var(--accent); }
+.goal-bar { height: 8px; margin-top: .5rem; border-radius: 999px; background: rgba(255,255,255,.08); overflow: hidden; }
+.goal-bar i { display: block; height: 100%; width: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
 .skills-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem;
 }
