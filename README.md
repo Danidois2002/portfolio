@@ -33,7 +33,7 @@
 | **GymSocial** | Application mobile de fitness (React Native, Expo, Node.js, Supabase) | [gymsocial.eu](https://www.gymsocial.eu) |
 | **¡Hala Madrid!** | Site de supporters avec boutique et configurateur de maillot en SVG | [Démo](https://danidois2002.github.io/HalaMadrid/) · [Code](https://github.com/Danidois2002/HalaMadrid) |
 | **Daniel's Pizzeria** | Site vitrine avec carte interactive et réservation | [Démo](https://danidois2002.github.io/Pizzeria/) · [Code](https://github.com/Danidois2002/Pizzeria) |
-| **Diagnostic Supply Chain** | Quiz de maturité réalisé pendant mon stage chez Logistics in Wallonia | [Démo](https://danidois2002.github.io/LIW/) · [Code](https://github.com/Danidois2002/LIW) |
+| **Diagnostic Supply Chain** | Quiz de maturité réalisé pendant mon stage chez Logistics in Wallonia | [Démo](https://danidois2002.github.io/diagnostic-supply-chain/) · [Code](https://github.com/Danidois2002/diagnostic-supply-chain) |
 
 ## 🛠️ Côté technique
 
