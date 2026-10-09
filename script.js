@@ -17,8 +17,29 @@ document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 const navToggle = document.getElementById('nav-toggle');
 const nav = document.getElementById('site-nav');
-navToggle?.addEventListener('click', () => nav.classList.toggle('open'));
-nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => nav.classList.remove('open')));
+const navLinks = [...nav.querySelectorAll('a')];
+
+function setMenu(open) {
+  nav.classList.toggle('open', open);
+  navToggle?.setAttribute('aria-expanded', String(open));
+  navToggle?.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+}
+navToggle?.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+navLinks.forEach((a) => a.addEventListener('click', () => setMenu(false)));
+// Le menu se ferme aussi en touchant ailleurs ou avec Échap
+document.addEventListener('click', (event) => {
+  if (nav.classList.contains('open') && !event.target.closest('.site-header')) setMenu(false);
+});
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });
+
+// Section en cours de lecture : mise en évidence dans le menu mobile
+const spy = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${entry.target.id}`));
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('main section[id]').forEach((section) => spy.observe(section));
 
 const form = document.getElementById('contact-form');
 const note = document.getElementById('form-note');
@@ -40,6 +61,9 @@ ${decodeURIComponent(message)}`;
 
 const parallaxElements = [...document.querySelectorAll('[data-parallax]')];
 const heroVisual = document.querySelector('.hero-visual');
+// Sur mobile, pas de parallax : défilement plus fluide et aucun bloc ne se décale
+const mobileQuery = window.matchMedia('(max-width: 760px)');
+let parallaxOn = false;
 let ticking = false;
 
 function updateOnScroll() {
@@ -47,6 +71,17 @@ function updateOnScroll() {
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
   if (progressBar) progressBar.style.width = `${Math.min(progress, 100)}%`;
+
+  if (mobileQuery.matches) {
+    if (parallaxOn) {
+      if (heroVisual) heroVisual.style.translate = '';
+      parallaxElements.forEach((el) => el.style.removeProperty('--parallax-y'));
+      parallaxOn = false;
+    }
+    ticking = false;
+    return;
+  }
+  parallaxOn = true;
 
   // Toutes les lectures d'abord, puis toutes les écritures (évite les reflows forcés)
   const halfViewport = window.innerHeight / 2;
